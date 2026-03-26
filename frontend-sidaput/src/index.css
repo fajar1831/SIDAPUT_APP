@@ -1,0 +1,45 @@
+/* Import Font Modern dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Definisikan Warna Kustom biar nggak kaku */
+  --sb-bg: #1e293b; /* Warna Sidebar Gelap Modern */
+  --sb-text: #f1f5f9;
+  --sb-active: #38bdf8; /* Warna Biru Langit buat menu aktif */
+  --main-bg: #f8fafc; /* Warna Background Utama agak abu biar mata nggak sakit */
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--main-bg);
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Kustomisasi Card Bootstrap agar modern */
+.card {
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: var(--card-shadow) !important;
+}
+
+/* Kustomisasi Tabel agar bersih */
+.table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  padding: 1rem !important;
+}
+
+.table td {
+  padding: 1rem !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+/* Utility classes tambahan */
+.rounded-xl { border-radius: 12px !important; }
+.btn { border-radius: 8px !important; font-weight: 500; padding: 8px 16px; }
